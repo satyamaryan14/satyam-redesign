@@ -1,16 +1,28 @@
-# React + Vite
+Workshop Booking Platform
+A high-performance, mobile-responsive React application designed for workshop coordinators to manage registrations and track session statistics.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tech Stack
+Frontend: React.js (v18+)
 
-Currently, two official plugins are available:
+Build Tool: Vite (for ultra-fast HMR)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+State Management: React Hooks (useState, useEffect, useRef)
 
-## React Compiler
+Styling: Modular CSS & Dynamic JS Design Tokens
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Project Structure:
+src/
+├── hooks/
+│   └── useResponsive.js      # Global screen-sizing & design tokens
+├── pages/
+│   ├── LoginPage.jsx         # Optimized auth flow
+│   ├── RegistrationPage.jsx  # Multi-section coordinator signup
+│   └── StatisticsPage.jsx    # Data dashboard with CSV export
+└── App.jsx                   # Component routing
 
-## Expanding the ESLint configuration
+Getting Started
+Clone the repo: git clone <https://github.com/satyamaryan14/satyam-redesign>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Install: npm install
+
+Run: npm run dev
